@@ -10,18 +10,8 @@ export default class SimpleCalculatorDemo extends LightningElement {
         if(currentInputName == "number1")
             this.no1=currentValue;
         else
-            this.no2=currentValue;
+            this.no2=currentValue; 
+    
     };
-    doAdd(event){
-        this.results = parseInt(this.no1)+parseInt(this.no2);
-    };
-    doSub(event){
-        this.results = parseInt(this.no1)-parseInt(this.no2);
-    };
-    doMul(event){
-        this.results = parseInt(this.no1)*parseInt(this.no2);
-    };
-    doDiv(event){
-        this.results = parseInt(this.no1)/parseInt(this.no2);
-    }
+    
 }
