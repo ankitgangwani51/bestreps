@@ -1,0 +1,22 @@
+<template>
+    <template if:true={booleanVar}>
+        <lightning-input type="text" label="First Name" disabled={boolDisabled}>
+        </lightning-input>
+        <lightning-input type="text" label="Last Name" disabled={boolDisabled}>
+        </lightning-input>
+        <lightning-input type="text" label="Email Name" disabled={boolDisabled}>
+        </lightning-input>
+        <lightning-input type="text" label="Phone" disabled={boolDisabled}>
+        </lightning-input>
+
+        <lightning-button label="Disable" onclick={handleDisable} variant="brand"></lightning-button>
+        <lightning-button label="Hide Form" onclick={handleHide}></lightning-button>
+
+    </template>
+    <template if:false={booleanVar}>
+        <lightning-button label="Show Form" onclick={handleClick}>
+            </lightning-button>
+
+    </template>
+    
+</template>
